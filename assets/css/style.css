@@ -1,0 +1,253 @@
+
+:root {
+    --blue: #024d94;
+    --yellow: #f8d171;
+    --white: #ffffff;
+    --black: #111111;
+    --blacktxt: #555555;
+  }
+* {
+    padding: 0;
+    margin: 0;
+}
+a {
+    font-weight: 700;
+    text-decoration: none;
+}
+p {
+    line-height: 25px;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    min-height: 100vh;
+    max-width: 100vw;
+    background: linear-gradient(90deg, var(--blue) 0%, var(--blue) 50%, var(--yellow) 50% , var(--yellow) 100%);
+}
+
+
+.lxt-btn-prime {
+    border: 2px solid var(--blue);
+    padding: 7px 10px 7px 10px;
+}
+.lxt-btn-sec {
+    background-color: var(--yellow);
+    border: 2px solid var(--yellow);
+    padding: 7px 10px 7px 10px;
+    color: var(--blue);
+    font-weight: 700;
+}
+.bbtxt {
+    color: var(--blacktxt)!important;
+}
+.lxt-bl {
+    display: inline-block;
+    
+}
+.lxt-mgm {
+    width: 100%;
+    height: 50px;
+}
+.lxt-mgmx {
+    width: 100%;
+    height: 100px;
+}
+.lxt-mgs {
+    width: 100%;
+    height: 25px;
+}
+
+[type='email'] {
+    width: 70%;
+    outline: none;
+    padding: 7px 20px 7px 20px;
+    box-sizing: border-box;
+    color: var(--blue);
+    border: 2px solid var(--blue);
+}
+
+.lxt-bbt {
+    color: var(--blue)!important;
+}
+.lxt-ffb {
+    background-color: var(--white)!important;
+}
+.lxt-section1 {
+    width: 100%;
+    /*max-width: 1280px; */
+    display: flex;
+    padding: 7% 10% 30px 10%;
+    margin: auto;
+    /* background-color: lavender; */
+    box-sizing: border-box;
+}
+#header {
+    width: 80%;
+    max-width: 1280px;
+    height: 100px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000;
+    right: 0%;
+    top: 20px;
+    
+}
+.cta-img img {
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+.highlights {
+    color: #ff8900;
+}
+.cta-img {
+    
+    align-items: center;
+    display: flex;
+}
+.ribbon-lxt {
+    width: 100%;
+    padding: 5% 10% 5% 10%;
+    box-sizing: border-box;
+    height: 180px;
+    background-color: var(--yellow);
+}
+.promo-txt-sec {
+    width: 70%;
+    color: var(--blue);
+    font-size: 1.2rem;
+    float: left;
+}
+
+.btn-promo {
+    width: 25%;
+    float: right;
+}
+#logo-image {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    left: 5%;
+    top: 20px;
+}
+.nav-link {
+    color: #024d94;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+#header-img {
+    width: 163px;
+}
+#main-navigation {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+#home {
+    width: 80%;
+    max-width: 1280px;
+    display: flex;
+    padding: 20px;
+    margin: auto;
+    /* background-color: lavender; */
+    box-sizing: border-box;
+}
+.cta-text {
+    margin-top: 100px;
+    color: var(--white);
+}
+.lxt-h1 {
+    font-size: 5rem;
+    font-weight: 700;
+}
+.lxt-h2 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.contact-section {
+    width: 100%;
+    max-width: 498px;
+    padding: 30px;
+    margin: auto;
+    text-align: center;
+}
+
+#label-email {
+    text-align: left;
+}
+
+#video {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    padding: 40px 40px 40px 40px;
+    box-sizing: border-box;
+    display: flex;
+    color: var(--blue);
+    background-color: var(--yellow);
+}
+footer .socials {
+    width: 50%;
+}
+footer .copyrights {
+    width: 50%;
+    text-align: right;
+}
+.copyrights a {
+    font-size: .8rem;
+    color: var(--blue);
+}
+.nav-menus-sm {
+    display: none;
+    position: absolute;
+    right: 20px;
+}
+@media only screen and (max-width: 767px) {
+    .lxt-section1 {
+        flex-direction: column-reverse;
+    }
+    #features {
+        flex-direction: column;
+    }
+  }
+  @media only screen and (max-width: 639px) {
+    body {
+        background-color: red;
+    }
+    .nav-link {
+        display: none;
+    }
+    .nav-menus-sm {
+        display: inline-block;
+    }
+    .promo-txt-sec {
+        float: none;
+    }
+    .btn-promo {
+        margin-top: 20px;
+        float: none;
+    }
+    footer {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    footer .socials {
+        width: 100%;
+    }
+    footer .copyrights {
+        width: 100%;
+        margin-bottom: 20px;
+
+    }
+  }

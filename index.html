@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>ZShoe - Coolest Kicks in town</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/png">
+    <!-- google fonts import
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">-->
+</head>
+<body>
+    <!-- 
+        *Requirements*
+            media query breakpoints
+            flexbox
+
+        *user story*
+        -> Header #header
+            -> Image #header-img | COMPANY LOGO
+            -> Nav | fixed at top
+                ->Link .navlink | main navigation links to current page section
+        -> main 
+            ->video #video | embade from youtube
+            ->form #form | newsletter | action = https://www.freecodecamp.com/email-submit
+                -input type email | placeholder to explain input | html email validation
+                ->input type submit #submit |when clicked goes to a static page in the action form
+        
+        
+        -> footer (personally added)
+    -->
+
+
+
+    <header id="header">
+        <div id="logo-image">
+            <img src="./assets/imgs/logo.png" alt="" id="header-img">
+        </div>
+        <nav id="main-navigation">
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#features">Feature</a>
+            <a class="nav-link lxt-btn-prime" href="#buy">Buy Now</a>
+            <div class="nav-menus-sm">
+                <a href="#!"><img src="https://img.icons8.com/material-sharp/50/000000/menu.png"/></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="cta-text">
+                <h1 class="lxt-h1"><span class="highlights">45%</span> <br> Limited <br> Discount!!</h1>
+                <p>
+                    We are offering a 45% discout to purchases made 
+                    via this link. <br> Offers is only limited to a few 
+                    people, Hurry!!
+                </p>
+                <div class="lxt-mgm"></div>
+                <a href="#buy" class="lxt-bl  lxt-btn-sec">
+                    Buy Now!
+                </a>
+            </div>
+            <div class="cta-img">
+                <img src="./assets/imgs/hero.png" alt="zflash">
+            </div>
+        </section>
+
+
+        <section id="about" class="lxt-section1 lxt-ffb">
+            <div class="cta-text">
+                <h2 class="lxt-h2 lxt-bbt">About The <span>Zflash</span></h2>
+                <img src="./assets/imgs/line.png" alt="">
+                <p class="bbtxt">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Etiam et purus a odio finibus bibendum in sit amet leo. 
+                    Mauris feugiat erat tellus.Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit.
+                </p>
+                <ul class="bbtxt">
+                    <li>Nunc quis justo sed odio scelerisque.</li>
+                    <li>Duis tristique lorem non risus dignissim</li>
+                </ul>
+                <div class="lxt-mgm"></div>
+                <a href="#!" class="lxt-bl  lxt-btn-sec">
+                    Learn More 
+                </a>
+            </div>
+            <div class="cta-img">
+                <img src="./assets/imgs/01.png" alt="zflash">
+            </div>
+        </section>
+        
+    <div class="ribbon-lxt" >
+        <p class="promo-txt-sec">
+            We are offering a 45% discout to purchases made via this link.
+            Offers is only limited to a few people, Hurry!! 
+        </p>
+        <div class="btn-promo">
+            <a href="#buy" class="lxt-btn-prime">Buy Now!</a>   
+
+        </div>
+    </div>
+        <section id="features" class="lxt-section1" style="background-color: #fafafa;">
+            <div class="cta-img" id="video">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/q6aalRynMQg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="cta-text" style="padding: 5px 5% 5px 5%;">
+                <h2 class="lxt-h2 lxt-bbt">Why <span>zFlash</span></h2>
+                <img src="./assets/imgs/line.png" alt="">
+                <p class="bbtxt">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Etiam et purus a odio finibus bibendum in sit amet leo. 
+                    Mauris feugiat erat tellus.
+                </p>
+                <ul class="bbtxt">
+                    <li>Password Protected</li>
+                    <li>Highly Secured</li>
+                    <li>Super Fast Speed</li>
+                    <li>Easy to Connect</li>
+                    <li>Fingerprint lock</li>
+                </ul>
+                <div class="lxt-mgm"></div>
+                <a href="#about" class="lxt-bl  lxt-btn-sec">
+                    Learn More 
+                </a>
+            </div>
+            
+            
+        </section>
+
+
+        <section id="buy" class="lxt-section1 lxt-ffb">
+            <div class="contact-section">
+                <h2 class="lxt-h2 lxt-bbt">
+                    Buy zFlash Now.
+                </h2>
+                <img src="./assets/imgs/line.png" alt="">
+                <p>
+                    Your Region doesnt support online buying, Request sale by supplying
+                    your valid email address below, And we will have our sales team deliver to
+                    you.
+                </p>
+                <div class="lxt-mgm"></div>
+                <form action="https://www.freecodecamp.com/email-submit">
+                    <label id="label-email" for="email">
+                        Your Emmail * <br>
+                        <div class="lxt-mgs"></div>
+                        <input type="email" id="email" placeholder="Enter email ">
+                    </label>
+               
+                    <div class="lxt-mgs"></div>
+                    <input type="submit" class="lxt-btn-sec" value="Request Sale">
+                </form>
+                <div class="lxt-mgmx"></div>
+            </div>
+            
+        </section>
+    </main>
+    
+
+
+
+
+
+    <footer id="footer">
+        <div class="socials">
+            <a href="https://github.com/luxaintcc">Github</a>
+        </div>
+        <!-- Made by Chomba.live -->
+        <div class="copyrights">
+            <a href="#!">Freecodecamp.org submission </a> | Site by  
+            <a href="https://github.com/luxaintcc/">Chomba</a> 
+            with <a href="#!">♥</a> 
+            from <a href="https://www.facebook.com/trailsmediastudios"> 
+                Trails Media Studios©2021
+            </a>
+        </div>
+        
+    </footer>
+
+</body>
+</html>
